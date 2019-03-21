@@ -5,7 +5,6 @@ public class YangHui_zane {
 
     public static void main(String[] args) {
         generate(5);
-
     }
 
 
