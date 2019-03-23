@@ -8,6 +8,12 @@ public class MaxProfit_2_zane {
     }
 
 
+    /**
+     * No.122 股票最大利润2 参考官方题解。
+     *
+     * @param prices
+     * @return
+     */
     public static int cal(int[] prices) {
 
         int low = 0;

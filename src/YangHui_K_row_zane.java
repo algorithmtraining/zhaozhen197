@@ -8,6 +8,7 @@ public class YangHui_K_row_zane {
     }
 
     /**
+     * 给定一个非负索引 k，其中 k ≤ 33，返回杨辉三角的第 k 行。
      * No.119 杨辉三角2，参照评论使用，空间复杂度为O(k)
      *
      * @param rowIndex
