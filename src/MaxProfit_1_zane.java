@@ -14,7 +14,6 @@ public class MaxProfit_1_zane {
      */
     public static int maxProfit(int[] prices) {
 
-
         int profit = 0;
         int maxProfit = 0;
         if (prices.length <= 0) {
@@ -31,7 +30,6 @@ public class MaxProfit_1_zane {
                 }
             }
         }
-
         return maxProfit;
     }
 
