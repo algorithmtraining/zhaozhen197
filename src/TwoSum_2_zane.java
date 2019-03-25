@@ -1,3 +1,4 @@
+import java.util.EnumSet;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -11,6 +12,13 @@ public class TwoSum_2_zane {
 
     }
 
+    /**
+     * 采用twosum1中的思路，使用map，将数组以<numbers[i],i>的方式转为map.
+     *
+     * @param numbers
+     * @param target
+     * @return
+     */
     public static int[] towSum(int[] numbers, int target) {
 
         Map<Integer, Integer> numberMap = new HashMap();
@@ -28,6 +36,31 @@ public class TwoSum_2_zane {
 
 
         return null;
+    }
+
+    /**
+     * 因为numbers数组是有序自增胡，故可以采用首尾指针的方法，
+     *
+     * @param numbers
+     * @param target
+     * @return
+     */
+    public static int[] towSum2(int[] numbers, int target) {
+        int i = 0;
+        int j = numbers.length - 1;
+
+        while (i < j) {
+            if (numbers[i] + numbers[j] > target) {
+                j--;
+            } else if (numbers[i] + numbers[j] < target) {
+                i++;
+            } else {
+                return new int[]{i + 1, j + 1};
+            }
+        }
+
+        return null;
+
     }
 
 }
