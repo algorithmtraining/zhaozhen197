@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class MajorityElement {
+public class MajorityElement_zane {
 
     public static void main(String[] args) {
 
