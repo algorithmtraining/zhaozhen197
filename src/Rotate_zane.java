@@ -7,7 +7,6 @@ public class Rotate_zane {
         int[] nums = {1, 2, 3, 4, 5, 6, 7};
         int k = 2;
         rotate3(nums, k);
-
     }
 
     public static void rotate(int[] nums, int k) {
