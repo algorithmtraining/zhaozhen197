@@ -6,7 +6,7 @@ public class Rotate_zane {
     public static void main(String[] args) {
         int[] nums = {1, 2, 3, 4, 5, 6, 7};
         int k = 2;
-        rotate3(nums, k);
+        rotate4(nums, k);
     }
 
     public static void rotate(int[] nums, int k) {
@@ -58,7 +58,6 @@ public class Rotate_zane {
 
     /**
      * 想到相互交换的这种方法，但是代码写了好久，还是有问题。看来编程能力还是有待提高呀！
-     *
      * @param nums
      * @param k
      */
@@ -76,6 +75,23 @@ public class Rotate_zane {
             System.out.println(nums[i]);
         }
 
+
+    }
+
+    /**
+     * 使用3次反转数组，这个想法确实挺好，没想到！
+     *
+     * @param nums
+     * @param k
+     */
+    public static void rotate4(int[] nums, int k) {
+        reverse(nums, 0, nums.length - 1);
+        reverse(nums, 0, k - 1);
+        reverse(nums, k, nums.length - 1);
+        for (int i = 0; i < nums.length; i++) {
+            System.out.println(nums[i]);
+        }
+
     }
 
     private static void swap(int[] nums, int i, int j) {
@@ -83,6 +99,18 @@ public class Rotate_zane {
         nums[i] = nums[j];
         nums[j] = temp;
     }
+
+
+    public static void reverse(int[] nums, int start, int end) {
+
+        while (start < end) {
+            int temp = nums[start];
+            nums[start++] = nums[end];
+            nums[end--] = temp;
+        }
+    }
+
+
 
 
 }
