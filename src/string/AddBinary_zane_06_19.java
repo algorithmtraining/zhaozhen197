@@ -1,4 +1,4 @@
-package String;
+package string;
 
 public class AddBinary_zane_06_19 {
 

@@ -1,6 +1,4 @@
-package String;
-
-import java.util.HashMap;
+package string;
 
 public class ReverseVowels_zane_0610 {
 

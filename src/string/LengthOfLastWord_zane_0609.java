@@ -1,4 +1,4 @@
-package String;
+package string;
 
 public class LengthOfLastWord_zane_0609 {
 

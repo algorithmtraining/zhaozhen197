@@ -1,4 +1,4 @@
-package String;
+package string;
 
 public class CountAndSay_zane_0615 {
 

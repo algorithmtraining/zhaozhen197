@@ -1,4 +1,4 @@
-package String;
+package string;
 
 public class DetectCapitalUse_zane_0613 {
 
